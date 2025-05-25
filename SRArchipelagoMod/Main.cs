@@ -1,4 +1,5 @@
 ﻿using SRML;
+using SRML.Utils.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,13 @@ using System.Threading.Tasks;
 
 namespace SRArchipelagoMod
 {
+
+    [EnumHolder]
+    public static class Ids
+    {
+
+    }
+
     public class Main : ModEntryPoint
     {
         // Called before GameContext.Awake
@@ -21,7 +29,7 @@ namespace SRArchipelagoMod
         // Used for registering things that require a loaded gamecontext
         public override void Load()
         {
-
+            
         }
 
         // Called after all mods Load's have been called
